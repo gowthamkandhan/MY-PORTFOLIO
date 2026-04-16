@@ -66,15 +66,14 @@ main {
 
 /* ===== MAIN CONTENT ===== */
 .main-content {
+  
+  padding-top: 40px;
+
   flex: 1;
 }
 
-article {
-  display: none;
-}
-
-article.active {
-  display: block;
+.section {
+  margin-bottom: 80px;
 }
 
 .article-title {
@@ -197,6 +196,7 @@ article.active {
 .navbar-link.active {
   background: #f5c26b;
   color: #000;
+   font-weight: 600;
 }
 
 
@@ -297,6 +297,7 @@ article {
 
 /* Soft navbar hover */
 .navbar-link {
+   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
