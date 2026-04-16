@@ -487,12 +487,18 @@ article {
 /* ===== NAVBAR ===== */
 @media (max-width: 600px) {
   .navbar {
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;       
+    left: auto;
+    transform: none;
     right: auto;
-    width: 90%;
+
+    width: 100%;
+    margin-bottom: 20px;
+
     display: flex;
     justify-content: center;
+
+    box-shadow: none;
   }
 
   .navbar-list {
