@@ -428,15 +428,13 @@ article {
 
 /* ===== NAME GLOW (IMPROVED) ===== */
 
-.name {
-  color: #6c63ff;
-
-  background: linear-gradient(135deg, #6c63ff, #00c6ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  font-weight: 700;
-  letter-spacing: 1px;
+.project-item {
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 16px;
+  padding: 18px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
 }
 /* ===== PREMIUM PROJECT CARDS ===== */
 .project-item {
@@ -450,18 +448,20 @@ article {
 
 .project-item:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+  box-shadow: 0 20px 40pxrgba(0,0,0,0.7);
 }
 
 /* ===== GRADIENT PROJECT TITLE ===== */
 .project-title {
-  color: #6c63ff;
+  color: #6c63ff; /* fallback */
 
   background: linear-gradient(135deg, #6c63ff, #00c6ff);
-  -webkit-background-clip: text;
+
+  background-clip: text;              /* standard */
+  -webkit-background-clip: text;      /* for Chrome */
+
   -webkit-text-fill-color: transparent;
 }
-
 /* ===========================
    MOBILE RESPONSIVE FIXES
 =========================== */
